@@ -1,0 +1,79 @@
+---
+
+---
+
+<div class="skills" id="skills">
+  <h1>My Skills</h1>
+  <div class="badged">
+    <span
+      ><iconify-icon icon="vscode-icons:file-type-html"
+      ></iconify-icon>HTML</span
+    >
+    <span
+      ><iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>CCS</span
+    >
+    <span><iconify-icon icon="logos:javascript"></iconify-icon>JavaScript</span>
+    <span><iconify-icon icon="devicon:astro"></iconify-icon>Astro</span>
+    <span
+      ><iconify-icon icon="vscode-icons:file-type-python"
+      ></iconify-icon>Python</span
+    >
+    <span><iconify-icon icon="devicon:git"></iconify-icon>Git</span>
+    <span><iconify-icon icon="logos:nodejs-icon"></iconify-icon>Node JS</span>
+    <span><iconify-icon icon="devicon:bash"></iconify-icon>Bash</span>
+    <span><iconify-icon icon="flat-color-icons:linux"></iconify-icon>Linux</span
+    >
+    <span
+      ><iconify-icon icon="simple-icons:kalilinux"></iconify-icon>Kali Linux</span
+    >
+  </div>
+</div>
+
+<style>
+  .skills {
+    background-color: #000606;
+    background-image: radial-gradient(
+      rgba(153, 152, 152, 0.15) 2px,
+      transparent 0
+    );
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    height: 100vh;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: #9d9588;
+  }
+
+  .badged {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+
+  .badged span {
+    background-color: rgba(49, 47, 47, 14%);
+    border: 2px solid #0000003b;
+    backdrop-filter: blur(10000px);
+    text-decoration: none;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid white; */
+    padding: 10px;
+    border-radius: 20px;
+    width: 160px;
+  }
+</style>

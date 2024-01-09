@@ -1,0 +1,93 @@
+---
+
+---
+
+<div class="contact" id="contact">
+  <h1>Contact Me</h1>
+  <span>
+    I am a web developer with passion for creating digital and unique
+    experiences. Send me a message and answer you as soon as possible.
+  </span>
+
+  <span id="content">
+    <i class="fa-regular fa-envelope"></i>
+    david.s4mura1@gmail.com
+    <i id="copy" class="fa-regular fa-copy"></i>
+  </span>
+
+  <div class="alert" id="mss">
+    <span class="text">
+      <i class="fa-regular fa-circle-check"></i>
+      It has been copied correctly on the clipboard
+    </span>
+  </div>
+</div>
+
+<style>
+  .contact {
+    background-color: #000606;
+    background-image: radial-gradient(
+      rgba(153, 152, 152, 0.15) 2px,
+      transparent 0
+    );
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    height: 100vh;
+    position: relative;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: #8c6961;
+  }
+
+  span {
+    text-align: center;
+    color: white;
+    width: 50%;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #copy {
+    cursor: pointer;
+  }
+
+  .alert {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    background-color: #1d4273;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    visibility: hidden;
+    opacity: 0;
+
+    transition:
+      opacity 1s,
+      visibility 1s;
+  }
+
+  .alert span i {
+    color: green;
+    font-size: 40px;
+  }
+
+  .text {
+    text-align: center;
+    width: 100%;
+  }
+</style>
+<script src="../scripts/contact.js"></script>

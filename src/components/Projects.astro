@@ -1,0 +1,98 @@
+---
+import Cards from "../components/Cards.astro";
+---
+
+<div class="projects" id="prt">
+  <h1>My Projects</h1>
+  <div class="container">
+    <div class="cards">
+      <div class="cards">
+        <Cards
+          title="Calculator"
+          descrip="Develop an interactive calculator, with the following technologies"
+          herramienta_uno="HTML"
+          herramienta_dos="CSS"
+          herramienta_tres="JS"
+          fecha="24/12/2023"
+          link="https://calculators4mura1.netlify.app/"
+        />
+      </div>
+
+      <div class="cards">
+        <Cards
+          title="Disney"
+          descrip="Develop Disney's main page, with the following technologies."
+          herramienta_uno="ASTRO"
+          herramienta_dos="CSS"
+          herramienta_tres="JS"
+          fecha="03/01/2024"
+          link="https://disneyplusclons4mura1.netlify.app/"
+        />
+      </div>
+
+      <div class="cards">
+        <Cards
+          title="Things to do"
+          descrip="Develop a task list, developed with the following web technologies."
+          herramienta_uno="HTML"
+          herramienta_dos="CSS"
+          herramienta_tres="JS"
+          fecha="28/12/2023"
+          link="https://tasks4mura1pr.netlify.app/"
+        />
+      </div>
+      <div class="cards">
+        <Cards
+          title="Netflix"
+          descrip="Develop the Netflix session start, with the following web technologies."
+          herramienta_uno="HTML"
+          herramienta_dos="CSS"
+          herramienta_tres="JS"
+          fecha="02/01/2024"
+          link="https://netflixclons4mura1.netlify.app/"
+        />
+      </div>
+      <div class="cards">
+        <Cards
+          title="Discord"
+          descrip="Develop the main discord page, with the following web technologies."
+          herramienta_uno="ASTRO"
+          herramienta_dos="CSS"
+          herramienta_tres="JS"
+          fecha="05/01/2024"
+          link="https://discordclons4mura1.netlify.app/"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .projects {
+    background-color: #060f0e;
+    background-image: radial-gradient(
+      rgba(116, 109, 109, 0.171) 2px,
+      transparent 0
+    );
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: #8c6961;
+    text-align: center;
+  }
+
+  .cards {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+</style>

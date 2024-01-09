@@ -2,18 +2,19 @@
 
 ---
 
-<div class="banner" id="display">
+<div class="banner" id="home">
   <div class="navbar">
     <span class="name">David Cardozo</span>
     <span class="navbar_icon" id="btn"><i class="fa-solid fa-bars"></i></span>
     <div class="navbar_list" id="navbar">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Proyects</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#prt">Proyects</a></li>
           <li><a href="#">Writeups</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
     </div>
@@ -23,27 +24,23 @@
     <div class="text_title">
       <h1>
         David Cardozo <span>Developer Web and Hacker</span>
-        <badge
-          ><i class="fa-solid fa-circle"></i> Disponible para Trabajar</badge
-        >
+        <badge><i class="fa-solid fa-circle"></i> Available for Work</badge>
       </h1>
     </div>
     <span class="description">
-      Soy un Joven de 17 años apasionado por el desarrollo web y la seguridad
-      informática. Con experiencia en desarrollo web, habiendo desarrollado
-      varios proyectos. También tengo experiencia en seguridad informática,
-      habiendo completado varias máquinas en HackTheBox y TryHackme. Busco
-      constantemente oportunidades para mejorar mis habilidades y conocimientos.
-      Y estoy interesado en trabajar en proyectos desafiantes que me permitan
-      utilizar mis habilidades al máximo.</span
-    >
+      I am a 17 year old boy passionate about web development and security
+      computer science. With experience in web development, having developed
+      various projects. I also have experience in computer security, having
+      completed several machines on HackTheBox and TryHackme. Seek opportunities
+      to improve my skills and knowledge. And I'm interested in working on
+      challenging projects that allow me to Use my skills to the fullest.
+    </span>
   </div>
   <div class="button_container">
     <a href="https://github.com/Mr-S4mura1" class="button"
       ><i class="fa-brands fa-github-alt"></i> Github</a
     >
-    <a href="https://github.com/Mr-S4mura1" class="button"
-      ><i class="fa-solid fa-folder"></i> Proyectos</a
+    <a href="#prt" class="button"><i class="fa-solid fa-folder"></i> Projects</a
     >
   </div>
 </div>
@@ -110,9 +107,10 @@
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap: 8px;
     font-weight: 500;
-    width: 35%;
+    width: 32%;
     border-radius: 50cqh;
     margin: 5px 0px;
   }
@@ -195,6 +193,11 @@
     background-color: #091c38;
     padding: 15px;
     border-radius: 5px;
+  }
+
+  .navbar_icon:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 25px #091c38;
   }
 </style>
 <script src="../scripts/banner.js"></script>

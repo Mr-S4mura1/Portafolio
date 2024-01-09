@@ -2,11 +2,22 @@
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
 import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
+import Projects from "../components/Projects.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Portafolio David Cardozo">
+<Layout
+  title="David Cardozo - Briefcase 2024"
+  description="I am a 17 year old boy passionate about web development and security computer science. With experience in web development, having developed various projects. I also have experience in computer security, having completed several machines on HackTheBox and TryHackme. Seek opportunities to improve my skills and knowledge. And I'm interested in working on challenging projects that allow me to Use my skills to the fullest. "
+>
   <main>
     <Banner />
     <About />
+    <Skills />
+    <Projects />
+    <Contact />
+    <Footer />
   </main>
 </Layout>

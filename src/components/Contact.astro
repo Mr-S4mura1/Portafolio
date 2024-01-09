@@ -5,8 +5,8 @@
 <div class="contact" id="contact">
   <h1>Contact Me</h1>
   <span>
-    I am a web developer with passion for creating digital and unique
-    experiences. Send me a message and answer you as soon as possible.
+    I am a web developer with passion for creating digital and unique experiences. Send me a message and answer you as soon as
+    possible.
   </span>
 
   <span id="content">
@@ -26,10 +26,7 @@
 <style>
   .contact {
     background-color: #000606;
-    background-image: radial-gradient(
-      rgba(153, 152, 152, 0.15) 2px,
-      transparent 0
-    );
+    background-image: radial-gradient(rgba(153, 152, 152, 0.15) 2px, transparent 0);
     background-size: 30px 30px;
     background-position: -5px -5px;
     height: 100vh;
@@ -88,6 +85,61 @@
   .text {
     text-align: center;
     width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+    .contact {
+      height: 50vh;
+    }
+
+    .alert {
+      left: 15%;
+      width: 70%;
+      border-radius: 10px 10px 10px 10px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tabletas */
+    .contact {
+      height: 60vh;
+    }
+
+    .alert {
+      left: 15%;
+      width: 70%;
+      border-radius: 10px 10px 10px 10px;
+      bottom: 50px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas pequeñas */
+    .contact {
+      height: 70vh;
+    }
+
+    .alert {
+      left: 25%;
+      width: 50%;
+      border-radius: 10px 10px 10px 10px;
+      bottom: 50px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes */
+    .contact {
+      height: 90vh;
+    }
+
+    .alert {
+      left: 30%;
+      width: 40%;
+      border-radius: 10px 10px 10px 10px;
+      bottom: 50px;
+    }
   }
 </style>
 <script src="../scripts/contact.js"></script>

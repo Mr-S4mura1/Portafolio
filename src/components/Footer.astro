@@ -10,10 +10,7 @@
     width: 100%;
     height: 100%;
     background-color: #060f0e;
-    background-image: radial-gradient(
-      rgba(116, 109, 109, 0.171) 2px,
-      transparent 0
-    );
+    background-image: radial-gradient(rgba(116, 109, 109, 0.171) 2px, transparent 0);
     background-size: 30px 30px;
     background-position: -5px -5px;
   }
@@ -25,5 +22,33 @@
     justify-content: center;
     align-items: center;
     color: #ddd;
+  }
+
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+    .footer {
+      height: 5vh;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tabletas */
+    .footer {
+      height: 5vh;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas pequeñas */
+    .footer {
+      height: 6vh;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes */
+    .footer {
+      height: 7vh;
+    }
   }
 </style>

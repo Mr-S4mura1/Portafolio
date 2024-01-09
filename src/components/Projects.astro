@@ -70,10 +70,7 @@ import Cards from "../components/Cards.astro";
 <style>
   .projects {
     background-color: #060f0e;
-    background-image: radial-gradient(
-      rgba(116, 109, 109, 0.171) 2px,
-      transparent 0
-    );
+    background-image: radial-gradient(rgba(116, 109, 109, 0.171) 2px, transparent 0);
     background-size: 30px 30px;
     background-position: -5px -5px;
     height: 100vh;
@@ -94,5 +91,61 @@ import Cards from "../components/Cards.astro";
     margin: 30px auto 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+    .cards {
+      margin: 10px auto 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects {
+      height: 110vh;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tabletas */
+    .cards {
+      margin: 10px auto 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects {
+      height: 110vh;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas pequeñas */
+    .cards {
+      margin: 10px auto 0 auto;
+      display: grid;
+      justify-content: center;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+      height: 100vh;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes */
+    .cards {
+      margin: 10px auto 0 auto;
+      display: grid;
+      justify-content: center;
+      gap: 5px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects {
+      height: 100vh;
+    }
   }
 </style>

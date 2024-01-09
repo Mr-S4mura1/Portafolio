@@ -19,7 +19,6 @@
       </nav>
     </div>
   </div>
-  <img src="Banner.jpg" alt="Imagen Banner" class="banner_image" />
   <div class="text">
     <div class="text_title">
       <h1>
@@ -28,26 +27,25 @@
       </h1>
     </div>
     <span class="description">
-      I am a 17 year old boy passionate about web development and security
-      computer science. With experience in web development, having developed
-      various projects. I also have experience in computer security, having
-      completed several machines on HackTheBox and TryHackme. Seek opportunities
-      to improve my skills and knowledge. And I'm interested in working on
+      I am a 17 year old boy passionate about web development and security computer science. With experience in web development,
+      having developed various projects. I also have experience in computer security, having completed several machines on
+      HackTheBox and TryHackme. Seek opportunities to improve my skills and knowledge. And I'm interested in working on
       challenging projects that allow me to Use my skills to the fullest.
     </span>
   </div>
   <div class="button_container">
-    <a href="https://github.com/Mr-S4mura1" class="button"
-      ><i class="fa-brands fa-github-alt"></i> Github</a
-    >
-    <a href="#prt" class="button"><i class="fa-solid fa-folder"></i> Projects</a
-    >
+    <a href="https://github.com/Mr-S4mura1" class="button"><i class="fa-brands fa-github-alt"></i> Github</a>
+    <a href="#prt" class="button"><i class="fa-solid fa-folder"></i> Projects</a>
   </div>
 </div>
 
 <style>
   .banner {
+    overflow: hidden;
     height: 100vh;
+    background-image: url(Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .navbar {
@@ -66,16 +64,7 @@
 
   .name {
     font-weight: bolder;
-    font-size: 25px;
-    border: 1px solid black;
-  }
-
-  .banner_image {
-    width: 100%;
-    filter: brightness(50%);
-    position: absolute;
-    top: 0;
-    z-index: -1;
+    font-size: clamp(1.2em, 2vw, 2em);
   }
 
   .text {
@@ -86,7 +75,7 @@
   .text_title {
     margin: 20px 0;
     color: white;
-    font-size: 25px;
+    font-size: clamp(0.5em, 3.5vw, 1.5rem);
   }
 
   .text_title h1 span {
@@ -95,28 +84,29 @@
 
   .description {
     color: #ddd;
-    font-size: 15px;
+    font-size: clamp(0.5em, 2vw, 1em);
     line-height: 23px;
   }
 
   badge {
     background-color: #092423;
     box-shadow: 0 0 25px #092423;
-    font-size: 13px;
-    padding: 5px 13px;
+    font-size: clamp(0.25em, 1vw, 0.8em);
+    padding: 5px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 8px;
+    max-width: 32%;
+    min-width: 10%;
+    gap: 4px;
     font-weight: 500;
-    width: 32%;
     border-radius: 50cqh;
     margin: 5px 0px;
   }
 
   badge i {
-    font-size: 8px;
+    font-size: clamp(0.2em, 2vw, 0.5em);
     color: #3a5857;
     text-align: center;
   }
@@ -130,7 +120,7 @@
   .button {
     padding: 10px 20px;
     border: none;
-    font-size: 14px;
+    font-size: clamp(0.5em, 3vw, 0.9em);
     color: #fff;
     border-radius: 7px;
     font-weight: 600;
@@ -198,6 +188,181 @@
   .navbar_icon:hover {
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 25px #091c38;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                                MEDIA QUERIES                               */
+  /* -------------------------------------------------------------------------- */
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+    .banner {
+      text-align: center;
+      height: 50vh;
+    }
+
+    .text {
+      width: 70%;
+      margin: auto;
+    }
+
+    .button_container {
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 35%;
+    }
+
+    .button {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    badge {
+      margin: 13px auto;
+    }
+
+    .navbar_list {
+      height: 50vh;
+    }
+
+    .navbar_list nav ul {
+      margin: auto;
+    }
+
+    .navbar_list nav ul li a {
+      font-size: 10px;
+    }
+
+    .navbar_icon {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tabletas */
+    .banner {
+      text-align: center;
+      height: 50vh;
+    }
+
+    .text {
+      width: 70%;
+      margin: auto;
+    }
+
+    .button_container {
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 35%;
+    }
+
+    .button {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    badge {
+      margin: 13px auto;
+    }
+
+    .navbar_list {
+      height: 50vh;
+    }
+
+    .navbar_list nav ul {
+      margin: auto;
+    }
+
+    .navbar_list nav ul li a {
+      font-size: 10px;
+    }
+
+    .navbar_icon {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas pequeñas */
+    .banner {
+      text-align: center;
+      height: 50vh;
+    }
+
+    .text {
+      width: 70%;
+      margin: auto;
+    }
+
+    .button_container {
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 35%;
+    }
+
+    .button {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    badge {
+      margin: 13px auto;
+    }
+
+    .navbar_list {
+      height: 50vh;
+    }
+
+    .navbar_list nav ul {
+      margin: auto;
+    }
+
+    .navbar_list nav ul li a {
+      font-size: 10px;
+    }
+
+    .navbar_icon {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes */
+    .banner {
+      height: 60vh;
+    }
+
+    .navbar_list {
+      height: 60vh;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    /* Estilos para pantallas extra grandes */
+    .banner {
+      height: 100vh;
+    }
+
+    .navbar_list {
+      height: 100vh;
+    }
   }
 </style>
 <script src="../scripts/banner.js"></script>

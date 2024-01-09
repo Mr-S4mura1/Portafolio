@@ -6,11 +6,10 @@
   <div class="text">
     <h1>About Me</h1>
     <p>
-      I'm a 17-year-old with a passion for web development and security I'm
-      looking for my first job opportunity. I'm 4 years old experience in web
-      development, with <span>HTML, CSS, and JS</span>, and recently I've
-      started working with the <span>Framework of Astro</span>. I'm willing to
-      learn in at all times, and with all the disposition available.
+      I'm a 17-year-old with a passion for web development and security I'm looking for my first job opportunity. I'm 4 years old
+      experience in web development, with <span>HTML, CSS, and JS</span>, and recently I've started working with the <span
+        >Framework of Astro</span
+      >. I'm willing to learn in at all times, and with all the disposition available.
     </p>
   </div>
 </div>
@@ -20,10 +19,7 @@
     width: 100%;
     height: 100%;
     background-color: #060f0e;
-    background-image: radial-gradient(
-      rgba(116, 109, 109, 0.171) 2px,
-      transparent 0
-    );
+    background-image: radial-gradient(rgba(116, 109, 109, 0.171) 2px, transparent 0);
     background-size: 30px 30px;
     background-position: -5px -5px;
   }
@@ -57,5 +53,53 @@
   .text p > span {
     color: #1d4273;
     font-weight: bold;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    MEDIA                                   */
+  /* -------------------------------------------------------------------------- */
+
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+    .about {
+      height: 50vh;
+    }
+
+    .text {
+      width: 55%;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tabletas */
+    .about {
+      height: 50vh;
+    }
+
+    .text {
+      width: 55%;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas pequeñas */
+    .about {
+      height: 60vh;
+    }
+
+    .text {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes */
+    .about {
+      height: 70vh;
+    }
+
+    .text {
+      width: 75%;
+    }
   }
 </style>

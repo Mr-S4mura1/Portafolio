@@ -5,37 +5,23 @@
 <div class="skills" id="skills">
   <h1>My Skills</h1>
   <div class="badged">
-    <span
-      ><iconify-icon icon="vscode-icons:file-type-html"
-      ></iconify-icon>HTML</span
-    >
-    <span
-      ><iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>CCS</span
-    >
+    <span><iconify-icon icon="vscode-icons:file-type-html"></iconify-icon>HTML</span>
+    <span><iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>CCS</span>
     <span><iconify-icon icon="logos:javascript"></iconify-icon>JavaScript</span>
     <span><iconify-icon icon="devicon:astro"></iconify-icon>Astro</span>
-    <span
-      ><iconify-icon icon="vscode-icons:file-type-python"
-      ></iconify-icon>Python</span
-    >
+    <span><iconify-icon icon="vscode-icons:file-type-python"></iconify-icon>Python</span>
     <span><iconify-icon icon="devicon:git"></iconify-icon>Git</span>
     <span><iconify-icon icon="logos:nodejs-icon"></iconify-icon>Node JS</span>
     <span><iconify-icon icon="devicon:bash"></iconify-icon>Bash</span>
-    <span><iconify-icon icon="flat-color-icons:linux"></iconify-icon>Linux</span
-    >
-    <span
-      ><iconify-icon icon="simple-icons:kalilinux"></iconify-icon>Kali Linux</span
-    >
+    <span><iconify-icon icon="flat-color-icons:linux"></iconify-icon>Linux</span>
+    <span><iconify-icon icon="simple-icons:kalilinux"></iconify-icon>Kali Linux</span>
   </div>
 </div>
 
 <style>
   .skills {
     background-color: #000606;
-    background-image: radial-gradient(
-      rgba(153, 152, 152, 0.15) 2px,
-      transparent 0
-    );
+    background-image: radial-gradient(rgba(153, 152, 152, 0.15) 2px, transparent 0);
     background-size: 30px 30px;
     background-position: -5px -5px;
     height: 100vh;
@@ -75,5 +61,61 @@
     padding: 10px;
     border-radius: 20px;
     width: 160px;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    MEDIA                                   */
+  /* -------------------------------------------------------------------------- */
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+    .skills {
+      height: 60vh;
+    }
+
+    .badged {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tabletas */
+    /* Estilos para dispositivos móviles */
+    .skills {
+      height: 60vh;
+    }
+
+    .badged {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas pequeñas */
+    .skills {
+      height: 70vh;
+    }
+
+    .badged {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes */
+    .skills {
+      height: 80vh;
+    }
+
+    .badged {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+    }
   }
 </style>

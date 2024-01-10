@@ -83,20 +83,20 @@
 
   .description {
     color: #ddd;
-    font-size: clamp(0.5em, 2vw, 1em);
+    font-size: clamp(0.5em, 3vw, 1em);
     line-height: 23px;
   }
 
   badge {
     background-color: #092423;
     box-shadow: 0 0 25px #092423;
-    font-size: clamp(0.25em, 1vw, 0.8em);
+    font-size: clamp(0.3em, 1vw, 0.8em);
     padding: 5px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    max-width: 32%;
+    max-width: 38%;
     min-width: 10%;
     gap: 4px;
     font-weight: 500;
@@ -192,11 +192,12 @@
   /* -------------------------------------------------------------------------- */
   /*                                MEDIA QUERIES                               */
   /* -------------------------------------------------------------------------- */
+
   @media (max-width: 480px) {
     /* Estilos para dispositivos móviles */
     .banner {
       text-align: center;
-      height: 50vh;
+      height: 80vh;
     }
 
     .text {
@@ -225,7 +226,7 @@
     }
 
     .navbar_list {
-      height: 50vh;
+      height: 80vh;
     }
 
     .navbar_list nav ul {
@@ -246,7 +247,7 @@
     /* Estilos para tabletas */
     .banner {
       text-align: center;
-      height: 50vh;
+      height: 80vh;
     }
 
     .text {
@@ -275,7 +276,7 @@
     }
 
     .navbar_list {
-      height: 50vh;
+      height: 80vh;
     }
 
     .navbar_list nav ul {
@@ -296,7 +297,7 @@
     /* Estilos para pantallas pequeñas */
     .banner {
       text-align: center;
-      height: 50vh;
+      height: 60vh;
     }
 
     .text {
@@ -307,9 +308,10 @@
     .button_container {
       margin: 40px auto;
       display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 35%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      max-width: 20%;
     }
 
     .button {
@@ -325,7 +327,7 @@
     }
 
     .navbar_list {
-      height: 50vh;
+      height: 60vh;
     }
 
     .navbar_list nav ul {
@@ -344,17 +346,6 @@
 
   @media (min-width: 1025px) and (max-width: 1200px) {
     /* Estilos para pantallas grandes */
-    .banner {
-      height: 60vh;
-    }
-
-    .navbar_list {
-      height: 60vh;
-    }
-  }
-
-  @media (min-width: 1201px) {
-    /* Estilos para pantallas extra grandes */
     .banner {
       height: 100vh;
     }

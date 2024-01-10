@@ -96,33 +96,31 @@ import Cards from "../components/Cards.astro";
   @media (max-width: 480px) {
     /* Estilos para dispositivos móviles */
     .cards {
-      margin: 10px auto 0 auto;
+      width: 95%;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
 
     .projects {
-      height: 110vh;
+      height: 200vh;
     }
   }
 
   @media (min-width: 481px) and (max-width: 768px) {
     /* Estilos para tabletas */
     .cards {
-      margin: 10px auto 0 auto;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
 
     .projects {
-      height: 110vh;
+      height: 200vh;
     }
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
     /* Estilos para pantallas pequeñas */
     .cards {
-      margin: 10px auto 0 auto;
       display: grid;
       justify-content: center;
       gap: 10px;
@@ -137,7 +135,6 @@ import Cards from "../components/Cards.astro";
   @media (min-width: 1025px) and (max-width: 1200px) {
     /* Estilos para pantallas grandes */
     .cards {
-      margin: 10px auto 0 auto;
       display: grid;
       justify-content: center;
       gap: 5px;
@@ -145,7 +142,7 @@ import Cards from "../components/Cards.astro";
     }
 
     .projects {
-      height: 100vh;
+      height: 150vh;
     }
   }
 </style>

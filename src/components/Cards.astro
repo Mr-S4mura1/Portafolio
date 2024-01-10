@@ -9,15 +9,7 @@ interface Props {
   fecha: string;
 }
 
-const {
-  title,
-  descrip,
-  herramienta_uno,
-  herramienta_dos,
-  herramienta_tres,
-  link,
-  fecha,
-} = Astro.props;
+const { title, descrip, herramienta_uno, herramienta_dos, herramienta_tres, link, fecha } = Astro.props;
 ---
 
 <div class="cards">
@@ -32,9 +24,7 @@ const {
 
   <div class="link">
     <span class="fecha">{fecha}</span>
-    <a href={link} target="_blank">
-      <i class="fa-solid fa-arrow-up-right-from-square"></i></a
-    >
+    <a href={link} target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
 </div>
 

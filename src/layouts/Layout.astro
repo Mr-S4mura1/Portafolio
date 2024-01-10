@@ -4,7 +4,7 @@ interface Props {
   description: string;
 }
 
-const { title, description } = Astro.props; 
+const { title, description } = Astro.props;
 
 // Styles
 import "../styles/global.css";
@@ -18,13 +18,10 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="icon.ico" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#000" />
     <meta name="description" content={description} />
-    <script
-      src="https://kit.fontawesome.com/cf1ad10ff3.js"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
-    ></script>
+    <script src="https://kit.fontawesome.com/cf1ad10ff3.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>{title}</title>
   </head>
   <body>
